@@ -15,6 +15,11 @@ body {
   line-height: 1.4;
 }
 
+.text-primary {
+  color:#ffbc00;
+  font-weight: bold;
+}
+
 
 #navbar {
   display: flex;
@@ -36,6 +41,13 @@ body {
 #navbar .nav-items li a {
   color: #333;
   margin: 0rem 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+#navbar .nav-items li a:hover {
+  transition-duration: 0.5s;
+  background-color: #ffbc00;
 }
 
 /* Header showcase */
@@ -46,7 +58,7 @@ body {
   justify-content: left;
   align-items: center;
   position: relative;
-  z-index: -1;
+  z-index: 0;
 }
 
 
@@ -104,23 +116,25 @@ body {
   text-align: center;
 }
 
-/* About section */
-#about {
+/* technical section */
+#technical {
   text-align: center;
   margin: 4rem;
 }
 
-#about h1 {
+#technical h1 {
   letter-spacing: 0.25rem;
   font-size: 1.5rem;
+  padding-top: 2rem;
 }
 
-#about .about-lead {
+
+#technical .technical-lead {
   margin: 2rem 0rem;
   font-size: 1.25rem;
 }
 
-#about hr {
+#technical hr {
 
 display: block;
 margin: 1rem auto;
@@ -128,13 +142,98 @@ width: 15%;
 
 } 
 
-#about .about-summary {
+#technical .technical-summary {
   display: flex;
 
 }
 
-.about-box {
+.technical-box {
+  margin: 10rem 0rem;
   flex: 1;
   border: 1px solid black;
   padding: 2rem 1rem;
+}
+
+.technical-box i {
+  margin: 1rem 0rem;
+}
+
+.technical-box h3 {
+  letter-spacing: 0.15rem;
+  padding: 1rem 0rem;
+}
+
+.technical-knowledge {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.technical-knowledge .technical-box  {
+  flex: 1 1 100px;
+  
+}
+
+.technical-knowledge .technical-box:nth-child(2n) {
+  background-color: #cccccc;
+}
+
+.technical-knowledge .technical-box {
+  background-color: #efefef;
+}
+
+
+/* About section */
+#about {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+#about .about-left,
+#about .about-right {
+  padding: 15rem 3rem;
+  flex: 1;
+  border: 1px solid black;
+}
+
+#about .about-left h1 {
+  letter-spacing: 0.25rem;
+  font-size: 2.5rem;
+  padding: 1rem 0rem;
+}
+
+#about .about-left h3 {
+  font-size: 1.75rem;
+  letter-spacing: 0.15rem;
+  line-height: 2rem;
+  padding: 0.75rem 0rem;
+}
+
+#about .about-left p {
+  padding-top: 2rem;
+  text-align: justify;
+  line-height: 1.8rem;
+  letter-spacing: 0.10rem;
+}
+
+
+#about .about-right {
+  background: url('../img/about-img.JPG') no-repeat center center/cover;
+}
+
+#about .find-me {
+  margin: 4rem 0rem;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+#about .find-me i {
+  margin-right:2rem;
+}
+
+#about .find-me i:hover {
+  transition-duration: 0.5s;
+  color: #ffbc00;
 }
