@@ -20,6 +20,11 @@ body {
   font-weight: bold;
 }
 
+.description {
+  opacity: 0;
+  font-weight: bold;
+}
+
 
 #navbar {
   display: flex;
@@ -93,6 +98,8 @@ body {
   padding: 1rem 2rem;
   border-radius: 5px;
   letter-spacing: 0.15rem;
+  border: none;
+  text-transform: uppercase;
 }
 
 .btn:hover {
@@ -144,19 +151,39 @@ width: 15%;
 
 #technical .technical-summary {
   display: flex;
-
 }
 
 .technical-box {
-  margin: 10rem 0rem;
   flex: 1;
-  border: 1px solid black;
-  padding: 2rem 1rem;
+  /* border: 1px solid black; */
+  padding: 2rem 1.25rem;
+}
+
+.technical-box .description {
+  text-align: center;
+}
+
+.technical-box p {
+  text-align: justify;
 }
 
 .technical-box i {
   margin: 1rem 0rem;
 }
+
+.technical-box i:hover,
+.technical-box img:hover {
+  transition-duration: 0.3s;
+  color: #ffbc00;
+  
+}
+
+.technical-box i:hover + .description,
+.technical-box img:hover + .description {
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
 
 .technical-box h3 {
   letter-spacing: 0.15rem;
@@ -166,11 +193,13 @@ width: 15%;
 .technical-knowledge {
   display: flex;
   flex-wrap: wrap;
+  margin: 5rem 0rem;
 }
 
 
 .technical-knowledge .technical-box  {
-  flex: 1 1 100px;
+  flex: 1 1 1;
+  max-height: 150px;
   
 }
 
@@ -194,7 +223,7 @@ width: 15%;
 #about .about-right {
   padding: 15rem 3rem;
   flex: 1;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 #about .about-left h1 {
@@ -229,11 +258,24 @@ width: 15%;
   align-items: flex-end;
 }
 
-#about .find-me i {
+#about .find-me a i {
   margin-right:2rem;
+  color: #000;
 }
 
 #about .find-me i:hover {
   transition-duration: 0.5s;
   color: #ffbc00;
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
+  padding: 0.75rem 0rem;
 }
