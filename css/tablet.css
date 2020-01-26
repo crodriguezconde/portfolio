@@ -1,0 +1,97 @@
+#navbar {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.75rem;
+  position: sticky;
+  background-color: #fff;
+  top: 0;
+  z-index: 2;
+}
+
+#navbar .nav-items {
+  display: block;
+  margin-top: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#navbar .nav-items li {
+  padding: 1rem 0rem;
+}
+
+#navbar .nav-items li a {
+  color: #333;
+  margin: 0rem 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+#navbar .nav-items li a:hover {
+  transition-duration: 0.5s;
+  background-color: #ffbc00;
+}
+
+/* Showcase */
+.showcase-content  {
+  margin-left: 2em;
+}
+
+
+/* Technical section */
+
+#technical .technical-summary {
+  display: flex;
+  flex-wrap: wrap ;
+}
+
+.technical-box {
+  flex: 1 1 50%;
+  /* border: 1px solid black; */
+  padding: 2rem 1rem;
+}
+
+.technical-box i {
+  margin: 1rem 0rem;
+}
+
+.technical-box h3 {
+  letter-spacing: 0.15rem;
+  padding: 1rem 0rem;
+}
+
+.technical-knowledge {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem 0rem;
+}
+
+
+.technical-knowledge .technical-box  {
+  flex: 2 1 33%;
+
+  
+}
+
+.technical-knowledge .technical-box:nth-child(2n) {
+  background-color: #cccccc;
+}
+
+.technical-knowledge .technical-box {
+  background-color: #efefef;
+}
+
+/* About section */
+#about {
+  display: block;
+}
+
+#about .about-left,
+#about .about-right {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+}
+
+#about .about-right {
+  height: 70vh;
+}

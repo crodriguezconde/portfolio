@@ -1,0 +1,133 @@
+#navbar {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.75rem;
+  position: sticky;
+  background-color: #fff;
+  top: 0;
+  z-index: 2;
+}
+
+#navbar .nav-items {
+  display: block;
+  margin-top: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#navbar .nav-items li {
+  padding: 1rem 0rem;
+}
+
+#navbar .nav-items li a {
+  color: #333;
+  margin: 0rem 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+#navbar .nav-items li a:hover {
+  transition-duration: 0.5s;
+  background-color: #ffbc00;
+}
+
+/* Header showcase */
+.header-showcase {
+  height: 100vh;
+  background: url('../img/header-showcase-img.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+
+.header-showcase::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(70, 70, 70);
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+
+.showcase-content  {
+  z-index: 1;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 1rem;
+  line-height: 2;
+}
+
+
+.btn {
+  color: #fff;
+  font-size: 1rem;
+  background-color: #ffbc00;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  letter-spacing: 0.15rem;
+}
+
+.btn:hover {
+  transition-duration: 0.5s;
+  background-color: #dba102;
+}
+
+.showcase-content h1 {
+  letter-spacing: 0.25rem;
+  font-size: 3.5rem;
+}
+
+.showcase-content h3  {
+  margin: 1rem 0rem;
+  letter-spacing: 0.15rem;
+  font-size: 1.5rem;
+}
+
+.showcase-button {
+  margin: 3rem 0rem;
+  text-align: center;
+}
+
+
+/* Technical */
+#technical .technical-summary {
+  display: block;
+}
+
+#technical .technical-lead {
+  margin: 2rem 0rem;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  text-align: justify;
+}
+
+.technical-knowledge .technical-box  {
+  flex: 1 1 100%;
+  
+}
+
+/* About section */
+#about {
+  display: block;
+}
+
+
+#about .about-left,
+#about .about-right {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+}
+
+#about .about-right {
+  height: 70vh;
+}
