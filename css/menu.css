@@ -1,0 +1,71 @@
+#navbar #menu-toggler .nav-items {
+    display: none;
+}
+
+
+#menu-toggler {
+    position: relative;
+    width: 100%;
+    z-index: 1;   
+    display: block; 
+}
+
+#menu-toggler input[type='checkbox'] {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    opacity: 0;
+}
+
+#menu-toggler span {
+    pointer-events: none;
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: absolute;
+    top: 10px;
+    right: 3px;
+    background: #333;
+    z-index: 1;
+    border-radius: 3px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05, 1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05, 1.0),
+                opacity 0.55s ease;
+}
+
+#menu-toggler span:nth-child(2) {
+    top: 20px;
+}
+
+#menu-toggler span:nth-last-child(3) {
+    top: 30px;
+}
+
+#menu-toggler input:checked ~ span {
+    top: 20px;
+    transform: rotate(45deg) translate(-5px, 3px);
+}
+
+#menu-toggler input:checked ~ span:nth-child(2) {
+    top: 10px;
+    transform: rotate(-45deg) translate(-10px, 2px);
+}
+
+#menu-toggler input:checked ~ span:nth-child(3) {
+    opacity: 0;
+}
+
+#menu-toggler input:checked ~ ul {
+    display: block !important;
+    text-align: center;
+}
+
+#menu-toggler input:checked ~ ul li {
+    padding: 0.55rem 0;
+
+}

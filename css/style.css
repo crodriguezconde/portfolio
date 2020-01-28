@@ -279,3 +279,15 @@ footer {
 footer p {
   padding: 0.75rem 0rem;
 }
+
+/* Hamburger menu */
+
+#menu-toggler {
+   width: 100%;
+   display: flex;
+}
+
+#menu-toggler  input[type='checkbox'] {
+  display: none;
+}
+
