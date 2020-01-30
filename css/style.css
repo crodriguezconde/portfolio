@@ -191,10 +191,22 @@ width: 15%;
 }
 
 .technical-knowledge {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
   flex-wrap: wrap;
   margin: 5rem 0rem;
 }
+
+@media(max-width: 1175px) {
+  .technical-knowledge {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    margin: 5rem 0rem;
+  }
+}
+
+
 
 
 .technical-knowledge .technical-box  {

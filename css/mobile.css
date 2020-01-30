@@ -116,6 +116,11 @@
   
 }
 
+
+.technical-knowledge {
+  grid-template-columns: repeat(1, 1fr);
+}
+
 /* About section */
 #about {
   display: block;

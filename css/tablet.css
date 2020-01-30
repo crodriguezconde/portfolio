@@ -78,7 +78,7 @@
 }
 
 .technical-knowledge {
-  display: flex;
+  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
   margin: 5rem 0rem;
 }
